@@ -1,0 +1,29 @@
+<?xml version="1.0" enconding="ISO-8859-1"?>
+<!DOCTYPE listalibros SYSTEM  "libros1.xml">
+        <!ELEMENT listalibros (portada|libro)*>
+        <!ATTLIST listalibros
+                nombre CDATA #REQUIRED
+                centro CDATA #REQUIRED>
+        <!ELEMENT portada (#PCDATA)>
+        <!ATTLIST portada
+                imagen CDATA #REQUIRED>
+        <!ELEMENT libro (titulo|portada|autor|editorial|precio|codigo)*>
+        <!ATTLIST libro
+                anyo CDATA #REQUIRED>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT autor (apellido+,nombre+,cedula+,correo?|telefono?|Pais?|residencia?|ciudad?)>
+                cedula CDATA #REQUIRED>
+        <!ATTLIST autor
+                foto CDATA #IMPLIED>
+        <!ELEMENT apellido (#PCDATA)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT cedula (#PCDATA)>
+        <!ELEMENT correo (#PCDATA)>
+        <!ELEMENT telefono (#PCDATA)>
+        <!ELEMENT Pais (#PCDATA)>
+        <!ELEMENT residencia (#PCDATA)>
+        <!ELEMENT ciudad (#PCDATA)>
+        <!ELEMENT editorial (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>
+        <!ELEMENT codigo (#PCDATA)>
+        ]
